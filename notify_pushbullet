@@ -1,0 +1,12 @@
+#!/bin/bash
+### Send notification to pushbullet from CLI
+
+## get title and body from arguments
+title="$1"
+tname="$2"
+
+## pushbullet api key
+apikey="<your key here>"
+
+## Do the push
+curl --silent -u $apikey: https://api.pushbullet.com/v2/pushes -d type=note -d title="$title" -d body="$tname" > /dev/null

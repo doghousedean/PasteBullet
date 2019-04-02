@@ -1,0 +1,21 @@
+#!/bin/bash
+### Just what you always wanted, cat a file to termbin.com
+
+## Check for piped data
+
+if [ -t 0 ]
+then
+	echo "Pipe me some goodies"
+	echo "cat data.txt | term_bin"
+	exit
+fi
+
+tb=`cat`
+
+linked=`echo "$tb" | nc termbin.com 9999`
+
+notify_pushbullet "Term Bullet" $linked
+
+## Log entries so you can find them again!
+DATE=$(date +"%Y-%m-%d-%H-%M")
+echo "$DATE-$linked" >> ~/.term.log
