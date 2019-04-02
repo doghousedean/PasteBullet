@@ -14,9 +14,11 @@ This will send your piped data to termbin.com and then push you the link via pus
 
 4) use it
 
+#### Details ####
+
 1)
 
-	$ git clone git clone git@bitbucket.org:doghousedean/pastebullet.git
+	$ git clone git@github.com:doghousedean/PasteBullet.git
 	
 2)
 
@@ -33,15 +35,14 @@ This will send your piped data to termbin.com and then push you the link via pus
 	$ ln -s ~/pastebullet/notify_pushbullet .
 	$ ln -s ~/pastebullet/term_bin .
 	
+
+### Examples for use, just a few ###
 	
-4)
-	Examples for use, just a few
-	
-	a) $ cat readme | term_bin
-	b) $ grep "interesting info" large_doc | term_bin
-	c) $ cat data.csv | term_bin
+	$ cat readme | term_bin
+	$ grep "interesting info" large_doc | term_bin
+	$ cat data.csv | term_bin
 	
 
 ### Contribution guidelines ###
 
-* knock yourself out!
+* knock yourself out! 
