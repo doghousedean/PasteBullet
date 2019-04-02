@@ -27,7 +27,7 @@ This will send your piped data to termbin.com and then push you the link via pus
 	
 	$ vim notify_pushbullet
 	
-	update the apikey variable to have your key, save and quit
+	update the apikey variable to your key, save and quit
 	
 3)
 
